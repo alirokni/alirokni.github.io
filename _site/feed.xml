@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Ali Rokni&#39;s List of Github Projects</title>
+    <description>List of Github projects that I have created.  
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Aug 2016 16:21:55 -0700</pubDate>
-    <lastBuildDate>Sat, 06 Aug 2016 16:21:55 -0700</lastBuildDate>
+    <link>https://alirokni.github.io/</link>
+    <atom:link href="https://alirokni.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 06 Aug 2016 21:44:11 -0700</pubDate>
+    <lastBuildDate>Sat, 06 Aug 2016 21:44:11 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -28,11 +28,29 @@
 
 </description>
         <pubDate>Sat, 06 Aug 2016 13:11:17 -0700</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/08/06/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/08/06/welcome-to-jekyll.html</guid>
+        <link>https://alirokni.github.io/jekyll/update/2016/08/06/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://alirokni.github.io/jekyll/update/2016/08/06/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>First Official Entry</title>
+        <description>&lt;p&gt;As I picked up intrest in building Github &lt;code class=&quot;highlighter-rouge&quot;&gt;User Pages&lt;/code&gt; as index of my repository, I am using &lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt; which is a simple, blog-aware, static site generator.&lt;/p&gt;
+
+&lt;p&gt;Besides &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://help.github.com/categories/customizing-github-pages/&quot;&gt;Github Help&lt;/a&gt;, &lt;a href=&quot;https://www.thinkful.com/learn/a-guide-to-using-github-pages/&quot;&gt;A guide to using Github Pages&lt;/a&gt; is a very good resource to start.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 06 Aug 2016 13:11:17 -0700</pubDate>
+        <link>https://alirokni.github.io/repository/update/2016/08/06/intro.html</link>
+        <guid isPermaLink="true">https://alirokni.github.io/repository/update/2016/08/06/intro.html</guid>
+        
+        
+        <category>Repository</category>
         
         <category>update</category>
         
