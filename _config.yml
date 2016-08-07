@@ -10,7 +10,7 @@ title: Ali Rokni's List of Github Projects
 email: m_rokni@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
   List of Github projects that I have created.  
-baseurl: "/projects" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alirokni.github.io" # the base hostname & protocol for your site
 twitter_username: rokni
 github_username:  alirokni
