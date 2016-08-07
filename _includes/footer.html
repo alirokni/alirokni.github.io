@@ -6,16 +6,23 @@
       <div class="footer-col footer-col-3">
         <ul class="contact-list social-media-list">
           <li>{{ site.email }}</li>
-                    {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
+          {% if site.github_username %}
+            <li>
+              {% include icon-github.html username=site.github_username %}
+            </li>
+          
           {% endif %}
 
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
+          {% endif %}
+
+          {% if site.google_username %}
+            <li>
+              {% include icon-google.html username=site.google_username %}
+            </li>          
           {% endif %}
         </ul>
       </div>
