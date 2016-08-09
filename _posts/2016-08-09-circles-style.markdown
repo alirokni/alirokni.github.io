@@ -26,7 +26,7 @@ categories: Code Snippet
   background: red;
   border-radius: 50%;
   position: relative;
-  margin: 100px auto;
+  margin: 50px auto 100px auto;
 }
 #circles01:before,
 #circles01:after {
