@@ -5,7 +5,7 @@ date:   2016-08-09 13:00:00 -0700
 categories: Code Snippet
 ---
 
-An implementations of Site Navigation in CSS with linear-gradient background-image transition .
+An implementations of Site Navigation in CSS with linear-gradient background-image transition.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/alirokni/Ljuqw1yp/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
