@@ -7,11 +7,8 @@ categories: Code Snippet
 
 One of the implementations of Cloudy Day in CSS with animation.
 
-<div>
-<script async src="//jsfiddle.net/alirokni/re455sdm/embed/result/"></script>
-</div>
+<iframe width="100%" height="300" src="//jsfiddle.net/alirokni/re455sdm/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-[Edit in JSFiddle][jsfiddle]{:target="_blank"}
 
 {% highlight ruby %}
 <!-- HTML -->
@@ -37,18 +34,8 @@ body {
 #clouds {
   padding: 10px 0px;
   background: #c9dbe9;
-  /*background: linear-gradient(120deg, #c9dbe9, #eaeaea);*/
   background-image: radial-gradient(circle at top left, #FFFF80 10%, #c9dbe9 30%, #eaeaea 60%);
   height: 300px;
-}
-
-.sun {
-  /*width: 120px;
-  height: 120px;
-  background: #FFD800;
-  border-radius: 150px;
-  margin-left: 50px;
-  background-image: radial-gradient(circle at top left, #FFFF80 20%, rgba(204, 153, 153, 0.4) 30%, #E6E6FF 60%);*/
 }
 
 .cloud {
@@ -120,11 +107,9 @@ body {
 
 @keyframes moveclouds {
   from {
-    /* margin-left: 150%; */
     transform: translate3d(800%, 0, 0);
   }
   to {
-    /* margin-left: -50%; */
     transform: translate3d(-100%, 0, 0);
   }
 }
