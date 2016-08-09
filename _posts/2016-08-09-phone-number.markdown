@@ -43,5 +43,5 @@ console.log(solution('555372654')); #=> //"555-372-654"
 {% endhighlight %}
 
 
-[jsfiddle]: https://jsfiddle.net/alirokni/bqmwhuzk/embed/
+[jsfiddle]: https://jsfiddle.net/alirokni/bqmwhuzk/
 
