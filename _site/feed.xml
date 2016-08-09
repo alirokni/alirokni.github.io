@@ -6,9 +6,45 @@
 </description>
     <link>https://alirokni.github.io/</link>
     <atom:link href="https://alirokni.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Aug 2016 16:50:00 -0700</pubDate>
-    <lastBuildDate>Sun, 07 Aug 2016 16:50:00 -0700</lastBuildDate>
+    <pubDate>Mon, 08 Aug 2016 20:20:31 -0700</pubDate>
+    <lastBuildDate>Mon, 08 Aug 2016 20:20:31 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Projects List</title>
+        <description>&lt;p&gt;I have added &lt;a href=&quot;https://alirokni.github.io/projects/&quot;&gt;Projects&lt;/a&gt; page which breifly describes each project. And updated order of the posted entries. The list of porjects is availble at &lt;a href=&quot;https://alirokni.github.io/projects/&quot;&gt;Projects&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;for more information  &lt;a href=&quot;http://fletcher.github.io/peg-multimarkdown/index&quot; target=&quot;_blank&quot;&gt;Multimarkdown Users Guide&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 07 Aug 2016 20:45:00 -0700</pubDate>
+        <link>https://alirokni.github.io/repository/update/2016/08/07/adding-projects-name.html</link>
+        <guid isPermaLink="true">https://alirokni.github.io/repository/update/2016/08/07/adding-projects-name.html</guid>
+        
+        
+        <category>Repository</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>First Official Entry</title>
+        <description>&lt;p&gt;As I picked up intrest in building Github &lt;code class=&quot;highlighter-rouge&quot;&gt;User Pages&lt;/code&gt; as index of my repository, I am using &lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt; which is a simple, blog-aware, static site generator.&lt;/p&gt;
+
+&lt;p&gt;Besides &lt;a href=&quot;http://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://help.github.com/categories/customizing-github-pages/&quot;&gt;Github Help&lt;/a&gt; {:target=”_blank”}, &lt;a href=&quot;https://www.thinkful.com/learn/a-guide-to-using-github-pages/&quot;&gt;A guide to using Github Pages&lt;/a&gt; {:target=”_blank”} is a very good resource to start.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 07 Aug 2016 13:11:17 -0700</pubDate>
+        <link>https://alirokni.github.io/repository/update/2016/08/07/intro.html</link>
+        <guid isPermaLink="true">https://alirokni.github.io/repository/update/2016/08/07/intro.html</guid>
+        
+        
+        <category>Repository</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -24,7 +60,7 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot; target=&quot;_blank&quot;&gt;Jekyll docs&lt;/a&gt;  for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot; target=&quot;_blank&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt; . If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 06 Aug 2016 13:11:17 -0700</pubDate>
@@ -33,24 +69,6 @@
         
         
         <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>First Official Entry</title>
-        <description>&lt;p&gt;As I picked up intrest in building Github &lt;code class=&quot;highlighter-rouge&quot;&gt;User Pages&lt;/code&gt; as index of my repository, I am using &lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt; which is a simple, blog-aware, static site generator.&lt;/p&gt;
-
-&lt;p&gt;Besides &lt;a href=&quot;http://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://help.github.com/categories/customizing-github-pages/&quot;&gt;Github Help&lt;/a&gt; {:target=”_blank”}, &lt;a href=&quot;https://www.thinkful.com/learn/a-guide-to-using-github-pages/&quot;&gt;A guide to using Github Pages&lt;/a&gt; {:target=”_blank”} is a very good resource to start.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 06 Aug 2016 13:11:17 -0700</pubDate>
-        <link>https://alirokni.github.io/repository/update/2016/08/06/intro.html</link>
-        <guid isPermaLink="true">https://alirokni.github.io/repository/update/2016/08/06/intro.html</guid>
-        
-        
-        <category>Repository</category>
         
         <category>update</category>
         

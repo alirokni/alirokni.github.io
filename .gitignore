@@ -1,0 +1,5 @@
+.jekyll-metadata
+.ruby-gemset
+.ruby-version
+Gemfile.lock
+_site/

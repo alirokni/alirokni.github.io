@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First Official Entry"
-date:   2016-08-06 13:11:17 -0700
+date:   2016-08-07 13:11:17 -0700
 categories: Repository update
 ---
 As I picked up intrest in building Github `User Pages` as index of my repository, I am using `Jekyll` which is a simple, blog-aware, static site generator. 
