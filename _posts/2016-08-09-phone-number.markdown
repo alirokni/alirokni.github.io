@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Phone Numbers"
+title:  "Formatting Phone Numbers"
 date:   2016-08-09 08:00:00 -0700
 categories: Code Snippet
 ---
 
-One of the implementations of phone number formatting in JavaScript.
+One of the implementations of formatting phone numbers in JavaScript.
 
 [Edit in JSFiddle][jsfiddle]{:target="_blank"}, open console from DevTools and hit the Result/JavaScript.
 
