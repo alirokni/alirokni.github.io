@@ -5,7 +5,7 @@ date:   2016-08-08 23:00:00 -0700
 categories: Code Snippet
 ---
 
-Implementation of [Fibonacci number][fibonacci-wiki]{:target="_blank"} in JavaScript.
+One of the implementation of [Fibonacci number][fibonacci-wiki]{:target="_blank"} in JavaScript. For toher ways, visit [stackoverflow][stackoverflow]{:target="_blank"}.
 
 First code is the initial step to reconstruct the formula, second code is using loop within function and last one is using recursion to list Fibonacci number.
 
@@ -95,3 +95,4 @@ fibonacciRecursion(11);
 
 [jsfiddle]: https://jsfiddle.net/alirokni/jemjw47k/
 [fibonacci-wiki]: https://en.wikipedia.org/wiki/Fibonacci_number
+[stackoverflow]: http://stackoverflow.com/questions/7944239/generating-fibonacci-sequence
