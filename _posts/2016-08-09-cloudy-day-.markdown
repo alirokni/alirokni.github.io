@@ -5,15 +5,15 @@ date:   2016-08-09 12:00:00 -0700
 categories: Code Snippet
 ---
 
-One of the implementations of Cloudy Day in CSS with animation.
+An implementations of Cloudy Day in CSS with animation.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/alirokni/re455sdm/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 {% highlight ruby %}
+
 <!-- HTML -->
 <div id="clouds">
-  <div class="sun"></div>
   <div class="cloud x1"></div>
   <div class="cloud x2"></div>
   <div class="cloud x3"></div>
@@ -34,7 +34,7 @@ body {
 #clouds {
   padding: 10px 0px;
   background: #c9dbe9;
-  background-image: radial-gradient(circle at top left, #FFFF80 10%, #c9dbe9 30%, #eaeaea 60%);
+  background-image: radial-gradient(circle at top left, #FFFF80 10%, #c9dbe9 30%, #eaeaea 60%); // for showing the sun
   height: 300px;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .x2 {
   left: 450px;
-  top: -400px;
+  top: -10px;
   transform: scale(0.4);
   zoom: 0.4;
   opacity: 1;
@@ -82,7 +82,7 @@ body {
 
 .x3 {
   left: 350px;
-  top: -170px;
+  top: 130px;
   transform: scale(0.7);
   zoom: 0.7;
   opacity: 0.7;
@@ -91,7 +91,7 @@ body {
 
 .x4 {
   left: 50px;
-  top: -75px;
+  top: 75px;
   transform: scale(0.66);
   opacity: 0.56;
   animation: moveclouds 50s linear infinite;
@@ -107,12 +107,13 @@ body {
 
 @keyframes moveclouds {
   from {
-    transform: translate3d(800%, 0, 0);
+    transform: translate3d(500%, 0, 0);
   }
   to {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
   }
 }
+
 
 
 {% endhighlight %}
