@@ -5,7 +5,7 @@ date:   2016-08-08 23:00:00 -0700
 categories: Code Snippet
 ---
 
-One of the implementation of [Fibonacci number][fibonacci-wiki]{:target="_blank"} in JavaScript. For toher ways, visit [stackoverflow][stackoverflow]{:target="_blank"}.
+One of the many implementations of [Fibonacci number][fibonacci-wiki]{:target="_blank"} in JavaScript. For other ways, visit [stackoverflow][stackoverflow]{:target="_blank"}.
 
 First code is the initial step to reconstruct the formula, second code is using loop within function and last one is using recursion to list Fibonacci number.
 
