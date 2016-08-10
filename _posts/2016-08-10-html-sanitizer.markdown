@@ -39,14 +39,12 @@ function HTMLsanitizer(string) {
       return encapsulateEntityMap[s];
     });
   }
-
 }
 
-console.log(HTMLsanitizer("<p>this \"is\" a</p>", "encode")); => &lt;p&gt;this &quot;is&quot; a&lt;&sol;p&gt;
-console.log(HTMLsanitizer("&lt;p&gt;this &quot;is&quot; a&lt;&sol;p&gt;")); => <p>this "is" a</p>
-console.log(HTMLsanitizer()); => false
-console.log(HTMLsanitizer(HTMLsanitizer("<p>this \"is\" a</p>", "encode"))); => <p>this "is" a</p>
-
+console.log(HTMLsanitizer("<p>this \"is\" a</p>", "encode")); #=> &lt;p&gt;this &quot;is&quot; a&lt;&sol;p&gt;
+console.log(HTMLsanitizer("&lt;p&gt;this &quot;is&quot; a&lt;&sol;p&gt;")); #=> <p>this "is" a</p>
+console.log(HTMLsanitizer()); #=> false
+console.log(HTMLsanitizer(HTMLsanitizer("<p>this \"is\" a</p>", "encode"))); #=> <p>this "is" a</p>
 
 {% endhighlight %}
 
