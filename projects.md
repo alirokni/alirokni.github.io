@@ -12,7 +12,7 @@ You can review the source code at:
 - [site with Angular][angular]{:target="_blank"} 
   - rokni.net done with `Angular`
 - [node-server][nodeServer]{:target="_blank"} 
-  - Simple HTTP node server `Node`
+  - Simple HTTP node server `node.js`
 - [site with Node & Mustache][nodeMustache]{:target="_blank"} 
   - Server side templating with `node.js` and `mustache`
 - [Weather Report with GeoLocation][weatherReport]{:target="_blank"} 
