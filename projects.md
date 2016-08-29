@@ -11,6 +11,8 @@ You can review the source code at:
   - List of projects `User Page`
 - [site with Angular][angular]{:target="_blank"} 
   - rokni.net done with `Angular`
+- [node-server][nodeServer]{:target="_blank"} 
+  - Simple HTTP node server `Node`
 - [site with Node & Mustache][nodeMustache]{:target="_blank"} 
   - Server side templating with `node.js` and `mustache`
 - [Weather Report with GeoLocation][weatherReport]{:target="_blank"} 
@@ -22,3 +24,4 @@ You can review the source code at:
 [angular]: https://github.com/alirokni/angular
 [nodeMustache]: https://github.com/alirokni/node-mustache
 [weatherReport]: https://github.com/alirokni/weather-geoLocation
+[nodeServer]: https://github.com/alirokni/node-server
