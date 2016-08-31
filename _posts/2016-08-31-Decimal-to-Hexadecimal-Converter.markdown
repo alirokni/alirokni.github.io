@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Decimal to Hexadecimal Converter"
-date:   2016-08-30 23:00:00 -0700
+date:   2016-08-31 23:00:00 -0700
 categories: Code Snippet
 ---
 
@@ -33,11 +33,11 @@ function decToHex(nu, method) {
       decToHex(quo);
     }
     if (remin >= 10) {
-      if (method = 0) {
+      if (method == 0) {
         remin = String(remin).replace(/(10|11|12|13|14|15)/g, function(s) {
           return DecHexMap[s];
         });
-      } else if (method = 1) {
+      } else {
         switch (remin) {
           case (10):
             remin = "A";
