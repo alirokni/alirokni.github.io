@@ -5,8 +5,10 @@ date:   2016-10-13 23:00:00 -0700
 categories: Code Snippet
 ---
 
-Created Random Quote generator using mashape.com api. 
-[view in codepen] [codepen]{:target="_blank"}, [code in gist.github][gist]{:target="_blank"}, 
+Created Random Quote generator using mashape.com api. Style is uisng CSS Flexible Box Layout, bootstrp v.3 and font-awesome. JS is using jquery v.3.
+
+[view in codepen] [codepen]{:target="_blank"}, 
+[code in gist.github][gist]{:target="_blank"}
 
 {% highlight ruby %}
 
