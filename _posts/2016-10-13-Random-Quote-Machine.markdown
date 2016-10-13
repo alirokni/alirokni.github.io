@@ -7,8 +7,10 @@ categories: Code Snippet
 
 Created Random Quote generator using mashape.com api. Style is uisng CSS Flexible Box Layout, bootstrp v.3 and font-awesome. JS is using jquery v.3.
 
-[view in codepen] [codepen]{:target="_blank"}, 
+[view in codepen] [codepen]{:target="_blank"},
+
 [code in gist.github][gist]{:target="_blank"}
+
 
 {% highlight ruby %}
 
@@ -22,7 +24,7 @@ Created Random Quote generator using mashape.com api. Style is uisng CSS Flexibl
     function getQuote() {
         $(".content").removeClass("quote-text-shadow");
         $.ajax({
-          url: 'https://andruxnet-random-famous-quotes.p.mashape.com/', // The URL to the API. You can get this in the API page of the API you intend to consume
+          url: 'https://andruxnet-random-famous-quotes.p.mashape.com/', #=> // The URL to the API. You can get this in the API page of the API you intend to consume
           type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
           data: {
             "cat": ""
@@ -37,7 +39,7 @@ Created Random Quote generator using mashape.com api. Style is uisng CSS Flexibl
             alert(err.responseText);
           },
           beforeSend: function(xhr) {
-            xhr.setRequestHeader("X-Mashape-Authorization", "I6mNOeP0L0mshcX7ZsR6Epc3ISpFp1s4rgZjsnbjAjxbDChxTK"); // Enter here your Mashape key
+            xhr.setRequestHeader("X-Mashape-Authorization", "I6mNOeP0L0mshcX7ZsR6Epc3ISpFp1s4rgZjsnbjAjxbDChxTK"); #=> // Enter here your Mashape key
           }
         });
     };
@@ -54,7 +56,7 @@ Created Random Quote generator using mashape.com api. Style is uisng CSS Flexibl
         });
        }
     }
-    getQuote(); // calling the first time
+    getQuote(); #=> // calling the first time
   });
 
 {% endhighlight %}
