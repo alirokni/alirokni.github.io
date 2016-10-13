@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "Random-Quote-Machine"
+title:  "Random Quote Machine"
 date:   2016-10-13 23:00:00 -0700
 categories: Code Snippet
 ---
 
 Created Random Quote generator using mashape.com api. 
-
-[code in gist.github][gist]{:target="_blank"}, 
+[view in codepen] [codepen]{:target="_blank"}, [code in gist.github][gist]{:target="_blank"}, 
 
 {% highlight ruby %}
 
@@ -59,3 +58,4 @@ Created Random Quote generator using mashape.com api.
 {% endhighlight %}
 
 [gist]: https://gist.github.com/alirokni/5cb2d061980b2666a5d6c884a03bbfce
+[codepen]: https://s.codepen.io/rokni/debug/zKjbdo
