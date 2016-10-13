@@ -5,73 +5,57 @@ date:   2016-10-13 23:00:00 -0700
 categories: Code Snippet
 ---
 
-One of the many implementations of Decimal to Hexadecimal Conversion in JavaScript. 
+Created Random Quote generator using mashape.com api. 
 
-[Edit in JSFiddle][jsfiddle]{:target="_blank"}, -implemented using String Replace(0), Switch(1)- open console from DevTools and hit the Result/JavaScript.
+[code in gist.github][gist]{:target="_blank"}, 
 
 {% highlight ruby %}
 
-//decToHex
-var converted = "",
-  DecHexMap = { // mapping html Entities
-    10: "A",
-    11: "B",
-    12: "C",
-    13: "D",
-    14: "E",
-    15: "F"
-  };
-
-function decToHex(nu, method) {
-  var hex = 16,
-    nuN = nu,
-    remin = nuN % hex,
-    quo = parseInt(nuN / hex);
-
-  if (quo >= 0) {
-    if (quo > 0) {
-      decToHex(quo);
-    }
-    if (remin >= 10) {
-      if (method == 0) {
-        remin = String(remin).replace(/(10|11|12|13|14|15)/g, function(s) {
-          return DecHexMap[s];
+ $(function() {
+    $(".btn-quote button").on('click', function(){
+      getQuote();
+    });
+    $(".btn-tweet a").on('click', function(){
+      tweetIt();
+    });    
+    function getQuote() {
+        $(".content").removeClass("quote-text-shadow");
+        $.ajax({
+          url: 'https://andruxnet-random-famous-quotes.p.mashape.com/', // The URL to the API. You can get this in the API page of the API you intend to consume
+          type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
+          data: {
+            "cat": ""
+          },
+          dataType: 'json',
+          success: function(data) {
+            $(".content").addClass("quote-text-shadow");
+            $("#quoteText").text(data.quote);
+            $("#quoteAuthor").text("- " + data.author);
+          },
+          error: function(err) {
+            alert(err.responseText);
+          },
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader("X-Mashape-Authorization", "I6mNOeP0L0mshcX7ZsR6Epc3ISpFp1s4rgZjsnbjAjxbDChxTK"); // Enter here your Mashape key
+          }
         });
-      } else {
-        switch (remin) {
-          case (10):
-            remin = "A";
-            break;
-          case (11):
-            remin = "B";
-            break;
-          case (12):
-            remin = "C";
-            break;
-          case (13):
-            remin = "D";
-            break;
-          case (14):
-            remin = "E";
-            break;
-          case (15):
-            remin = "F";
-            break;
-        }
-      }
+    };
+    function tweetIt() {
+      var textToTweet = $("#quote > i > span").text() + "\n" + $(".content .text-right em").text() + " #quote";
+       if (textToTweet.length > 140) {
+        alert('Tweet should be less than 140 Chars');
+        event.preventDefault();
+       } else {
+        var twtLink = 'http://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+        $(".btn-tweet a").attr({
+          "href": twtLink,
+          "target":'_blank'
+        });
+       }
     }
-    converted += remin;
-  } else {
-    converted += remin;
-  }
-  return converted;
-}
-
-console.log(decToHex(12345, 0)); #=> // 3039
-console.log(decToHex(123, 1)); #=> // 7B
-console.log(decToHex(10, 0)); #=> // A
-console.log(decToHex(12345678, 1)); #=> //BC614E
+    getQuote(); // calling the first time
+  });
 
 {% endhighlight %}
 
-[jsfiddle]: https://jsfiddle.net/alirokni/rakc3v7h/
+[gist]: https://gist.github.com/alirokni/5cb2d061980b2666a5d6c884a03bbfce
