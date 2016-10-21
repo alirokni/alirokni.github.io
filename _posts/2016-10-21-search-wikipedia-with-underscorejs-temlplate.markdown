@@ -14,7 +14,7 @@ Created Search wikipedia with underscorejs temlplate using wikipedia api. Style 
 
 {% highlight ruby %}
 
-#=> Template
+#=>  html
 <div class="main-container">
   <a class="wiki-text" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Wikipedia Random article <i class="fa fa-external-link" aria-hidden="true"></i></a>
   <p class="wiki-text">or</p>
@@ -24,32 +24,16 @@ Created Search wikipedia with underscorejs temlplate using wikipedia api. Style 
             <button class="btn btn-secondary" type="button">Search Wikipedia!</button>
       </span>
   </div>
-  <ul id="tabsContent" class="list-continer">
-    <script type="text/html" id="tabs-data">
-       #=> // <% _.each(jsonData[0].query.pages, function(wiki,key,list){ %> used array 
-       <% _.each(jsonData.query.pages, function(wiki,key,list){ %>   
-            <li class="list-items">
-              <a href="https://en.wikipedia.org/?curid=<%= key %>" target="_blank">
-                <div class="entry-thumbnail">
-                  <% typeof(wiki.thumbnail) != 'undefined' ? print('<img src='+ wiki.thumbnail["source"] +'>')  : print('')  %>
-                </div>
-                <div class="entry-title"><%= wiki.title  %></div>
-                <div class="entry-extract">
-                  <%= wiki.extract %>
-                  <i class="fa fa-external-link hide" aria-hidden="true"></i>
-                </div>
-              </a> 
-            </li>
-       <% }); %>
-    </script>
-  </ul>
+    #=> return a compiled template function.
+    <ul id="tabsContent" class="list-continer">
+    </ul>
 </div>
 
 #=> js
 $(function() {
   function doSearch() {
     var searchInput = $('.search').val();
-    if (searchInput.length < 1 || $("ul#tabsContent li").hasClass( "list-items" ) === true) {
+    if (searchInput.length < 1 ) {
       return false;
     }
     var wikiUrl = "https://en.wikipedia.org/w/api.php";
@@ -87,13 +71,11 @@ $(function() {
   #=>  jsonData = []; 
   #=>  jsonData.push(data);
   #=> */  
-    var tabsTemplate = $("#tabs-data").html();
-    if (Boolean(tabsTemplate)) {
-      $("#tabsContent").html(_.template(tabsTemplate, {
+    var tabsTemplate = $("#tabs-data").html();     
+    $("#tabsContent").html(_.template(tabsTemplate, {
         jsonData: jsonData
-      }));
-    }
-
+    }));
+ 
     $(".list-items").hover(
       function() {
         $(this).find(".fa-external-link").removeClass('hide');
@@ -112,6 +94,25 @@ $(function() {
     }
   });
 });
+
+#=>   Underscore Template Definition. To put under its own and separate script
+<script type="text/html" id="tabs-data">
+   #=> // <% _.each(jsonData[0].query.pages, function(wiki,key,list){ %> used array 
+   <% _.each(jsonData.query.pages, function(wiki,key,list){ %>   
+        <li class="list-items">
+          <a href="https://en.wikipedia.org/?curid=<%= key %>" target="_blank">
+            <div class="entry-thumbnail">
+              <% typeof(wiki.thumbnail) != 'undefined' ? print('<img src='+ wiki.thumbnail["source"] +'>')  : print('')  %>
+            </div>
+            <div class="entry-title"><%= wiki.title  %></div>
+            <div class="entry-extract">
+              <%= wiki.extract %>
+              <i class="fa fa-external-link hide" aria-hidden="true"></i>
+            </div>
+          </a> 
+        </li>
+   <% }); %>
+</script>
 
 {% endhighlight %}
 
