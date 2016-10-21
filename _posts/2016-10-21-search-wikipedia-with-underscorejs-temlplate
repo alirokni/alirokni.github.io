@@ -27,22 +27,20 @@ Created Search wikipedia with underscorejs temlplate using wikipedia api. Style 
   <ul id="tabsContent" class="list-continer">
     <script type="text/html" id="tabs-data">
        #=> // <% _.each(jsonData[0].query.pages, function(wiki,key,list){ %> used array 
-      <% _.each(jsonData[0].query.pages, function(wiki,key,list){ %>  #=> //
-        <li class="list-items">
-          <a href="https://en.wikipedia.org/?curid=<%= key %>" target="_blank">
-            <div class="entry-thumbnail">
-              <% typeof(wiki.thumbnail) != 'undefined' ? print('<img src='+ wiki.thumbnail["source"] +'>')  : print('')  %>
-            </div>
-            <div class="entry-title">
-              <%= wiki.title  %>
-            </div>
-            <div class="entry-extract">
-              <%= wiki.extract %>
-                <i class="fa fa-external-link hide" aria-hidden="true"></i>
-            </div>
-          </a>
-        </li>
-      <% }); %>
+       <% _.each(jsonData.query.pages, function(wiki,key,list){ %>   
+            <li class="list-items">
+              <a href="https://en.wikipedia.org/?curid=<%= key %>" target="_blank">
+                <div class="entry-thumbnail">
+                  <% typeof(wiki.thumbnail) != 'undefined' ? print('<img src='+ wiki.thumbnail["source"] +'>')  : print('')  %>
+                </div>
+                <div class="entry-title"><%= wiki.title  %></div>
+                <div class="entry-extract">
+                  <%= wiki.extract %>
+                  <i class="fa fa-external-link hide" aria-hidden="true"></i>
+                </div>
+              </a> 
+            </li>
+       <% }); %>
     </script>
   </ul>
 </div>
