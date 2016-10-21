@@ -49,7 +49,7 @@ Created Search wikipedia with underscorejs temlplate using wikipedia api. Style 
 $(function() {
   function doSearch() {
     var searchInput = $('.search').val();
-    if (searchInput.length < 1 $("ul#tabsContent li").hasClass( "list-items" ) === true) {
+    if (searchInput.length < 1 || $("ul#tabsContent li").hasClass( "list-items" ) === true) {
       return false;
     }
     var wikiUrl = "https://en.wikipedia.org/w/api.php";
